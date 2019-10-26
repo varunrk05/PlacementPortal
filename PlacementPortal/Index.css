@@ -1,0 +1,71 @@
+﻿* {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body.login-main {
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+}
+
+/*CSS Styles for Login.aspx*/
+.login-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 60%;
+    padding: 10px;
+    border-style: outset;
+    border-color: rgb(37, 212, 137);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.login-box-main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.input-label {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(15, 63, 196);
+}
+
+.form-input {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-style: outset;
+    border-color: rgb(37, 212, 137);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size:20px;
+}
+
+.form-input.button {
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.validator {
+    color: rgb(254, 3, 3);
+    font-size: 15px;
+}
