@@ -1,5 +1,6 @@
-﻿CREATE TABLE [dbo].StudentLogin
-(
-	[studentID] NUMERIC(9) NOT NULL PRIMARY KEY, 
-    [studentPass] VARCHAR(50) NOT NULL
-)
+﻿CREATE TABLE [dbo].[StudentLogin] (
+    [studentID]   VARCHAR(50)  NOT NULL,
+    [studentPass] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([studentID] ASC)
+);
+

@@ -67,14 +67,91 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCompany.aspx" />
+    <Content Include="AddMembers.aspx" />
+    <Content Include="AdminDashboard.aspx" />
+    <Content Include="CompanyList.aspx" />
+    <Content Include="CreateGroup.aspx" />
+    <Content Include="EditDetails.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\mitLogo.png" />
+    <Content Include="Index.aspx" />
     <Content Include="Index.css" />
     <Content Include="Login.aspx" />
+    <Content Include="SearchCompanies.aspx" />
+    <Content Include="SignUp.aspx" />
+    <Content Include="StudDashboard.aspx" />
+    <Content Include="StudentList.aspx" />
+    <Content Include="Table Scripts\dbo.AdminDetails.sql" />
+    <Content Include="Table Scripts\dbo.AdminLogin.sql" />
+    <Content Include="Table Scripts\dbo.Company.sql" />
+    <Content Include="Table Scripts\dbo.groups.sql" />
+    <Content Include="Table Scripts\dbo.studentgroups.sql" />
+    <Content Include="Table Scripts\dbo.StudentLogin.sql" />
+    <Content Include="Table Scripts\dbo.UserDetails.sql" />
+    <Content Include="ViewGroups.aspx" />
+    <Content Include="ViewProfile.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMembers.aspx.cs">
+      <DependentUpon>AddMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMembers.aspx.designer.cs">
+      <DependentUpon>AddMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyList.aspx.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyList.aspx.designer.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateGroup.aspx.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateGroup.aspx.designer.cs">
+      <DependentUpon>CreateGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardMaster.Master.cs">
+      <DependentUpon>DashboardMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashboardMaster.Master.designer.cs">
+      <DependentUpon>DashboardMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="EditDetails.aspx.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDetails.aspx.designer.cs">
+      <DependentUpon>EditDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -84,8 +161,53 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchCompanies.aspx.cs">
+      <DependentUpon>SearchCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchCompanies.aspx.designer.cs">
+      <DependentUpon>SearchCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudDashboard.aspx.cs">
+      <DependentUpon>StudDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudDashboard.aspx.designer.cs">
+      <DependentUpon>StudDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentList.aspx.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentList.aspx.designer.cs">
+      <DependentUpon>StudentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewGroups.aspx.cs">
+      <DependentUpon>ViewGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewGroups.aspx.designer.cs">
+      <DependentUpon>ViewGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewProfile.aspx.designer.cs">
+      <DependentUpon>ViewProfile.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DashboardMaster.Master" />
+    <Content Include="App_Themes\Blue\Blue.skin" />
+    <Content Include="App_Themes\Green\Green.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

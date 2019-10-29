@@ -39,10 +39,12 @@ namespace PlacementPortal
             if(UserOption == "1")
             {
                 sqlQuery = "select count(*) as NoOfRows from StudentLogin where studentID=@id and studentPass=@pw";
+                Session["User"] = 1;
             }
             else
             {
                 sqlQuery = "select count(*) as NoOfRows from AdminLogin where adminID=@id and adminPass=@pw";
+                Session["User"] = 2;
             }
 
             cmd.CommandText = sqlQuery;
@@ -56,9 +58,24 @@ namespace PlacementPortal
             con.Close();
             if(NoOfRows == 1)
             {
+                //Using both session and query string will allow for a check to be maintained
                 //Session["RegID"] = tbRegID.Text;
                 //Response.Redirect("Dashboard.aspx?RegID=" + tbRegID.Text);
                 //ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Success')", true);
+                int userType = (int)Session["User"];
+                Session["RegID"] = tbRegID.Text;
+                if (userType == 1)
+                {
+                    string url = "StudDashboard.aspx?RegID=";
+                    url += Server.UrlEncode(tbRegID.Text);
+                    Response.Redirect(url);
+                }
+                else if(userType == 2)
+                {
+                    string url = "AdminDashboard.aspx?RegID=";
+                    url += Server.UrlEncode(tbRegID.Text);
+                    Response.Redirect(url);
+                }
             }
             else
             {

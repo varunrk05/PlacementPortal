@@ -4,9 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="Index.css" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet" />
-    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap" rel="stylesheet" />
 </head>
 <body class="login-main">
     <form id="login" runat="server" >
@@ -19,7 +19,7 @@
                 <asp:TextBox ID="tbPassword" runat="server" Text="Password" CssClass="form-input" TextMode="Password"></asp:TextBox><br />
                 <asp:RequiredFieldValidator ID="PasswordValidator" runat="server" ControlToValidate="tbPassword" ErrorMessage="*Password is a required field" Display="Dynamic" CssClass="validator"></asp:RequiredFieldValidator><br />
                 <asp:DropDownList ID="ddlOption" runat="server" CssClass="form-input" AutoPostBack="true"></asp:DropDownList>
-                <asp:Button ID="btnLogin" runat="server" Text="Log In" CssClass="form-input button" OnClick="btnLogin_Click"/>
+                <asp:Button ID="btnLogin" runat="server" Text="LOG IN" CssClass="form-input button" OnClick="btnLogin_Click"/>
                 <asp:Label ID="check" runat="server"></asp:Label>
             </div>
         </div>

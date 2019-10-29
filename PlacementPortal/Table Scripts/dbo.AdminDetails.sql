@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].AdminDetails
+(
+	[AdminID] VARBINARY(50) NOT NULL PRIMARY KEY, 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Dept] VARCHAR(4) NOT NULL
+)

@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DashboardMaster.master.cs" Inherits="PlacementPortal.DashboardMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="body-main">
+            <div class="header-main">
+                <div class="header-button">
+                    <div class="header-button-main">
+                        <asp:Button ID="btnLogOut" Text="Log Out" runat="server" OnClick="btnLogOut_Click" CssClass="btn-simple"/>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

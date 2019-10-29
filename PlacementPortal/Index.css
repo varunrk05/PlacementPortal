@@ -40,8 +40,6 @@ body.login-main {
 
 .input-label {
     width: 100%;
-    margin-top: 8px;
-    margin-bottom: 8px;
     text-align: center;
     font-size: 20px;
     color: rgb(15, 63, 196);
@@ -50,8 +48,6 @@ body.login-main {
 .form-input {
     width: 100%;
     height: 50px;
-    margin-top: 8px;
-    margin-bottom: 8px;
     border-style: outset;
     border-color: rgb(37, 212, 137);
     border-radius: 10px;
@@ -63,9 +59,471 @@ body.login-main {
     background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: 15px 0px;
 }
 
 .validator {
     color: rgb(254, 3, 3);
     font-size: 15px;
+}
+
+/*CSS styles for DashboardMaster.Master and Student and Admin Dashboards*/
+.body-main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-main {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+}
+
+.header-button {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header-button-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-simple {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 5px 5px rgb(15, 63, 196);
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 42, 80);
+}
+
+.btn-simple:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    transform: translate(3px, 3px);
+}
+
+/*.footer-main {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+}*/
+
+.content {
+    width: 100%;
+    height: 525px;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction:row;
+}
+
+.left-content-main {
+    width: 25%;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*.image-container {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(15, 63, 196);
+}*/
+
+#imgUser {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/*.image-box {
+    width: 100%;
+    height: 40%;
+}*/
+
+.info-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+
+.info-container-main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info-label {
+    height: 30px;
+    text-align: center;
+    width: 60px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.right-content-main {
+    width: 75%;
+    height: 555px;
+}
+
+.btn-container {
+    position: absolute;
+    left: 45%;
+    top: 15%;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-main {
+    width: 500px;
+    text-align: center;
+    box-shadow: 5px 5px rgb(0, 36, 100);
+    border: none;
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+}
+
+.btn-main:active {
+    box-shadow: 3px 3px rgb(0, 0, 0);
+    transform: translate(2px, 2px);
+}
+
+/*CSS Styles for form to add companies*/
+.form-main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+}
+
+.header-btn {
+    width: 20%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+.header-btn-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-home {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 5px 5px rgb(15, 63, 196);
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 42, 80);
+}
+
+.btn-home:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    transform: translate(3px, 3px);
+}
+
+.btn-home.sub {
+    margin: 20px 125px;
+}
+
+.btn-home.sub.am {
+    margin: 20px 300px;
+}
+
+.form-content {
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+
+.form-content.ac {
+    height: 2400px;
+}
+
+.form-content.gv {
+    height: 500px;
+}
+
+.form-content.sc {
+    height: 600px;
+}
+
+.form-content.ed {
+    height: 2200px;
+}
+
+.form-content.cg {
+    height: 800px;
+}
+
+.content-box {
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.content-box.gv {
+    width: 70%;
+}
+
+.content-box.gv.vp {
+    margin-left: 250px;
+}
+
+.content-box.gv.sl {
+    margin-left: 120px;
+}
+
+.content-box.gv.vg {
+    margin-left: 400px;
+}
+
+.content-box.ac {
+    background-color: rgb(245, 245, 245);
+}
+
+.content-box-main {
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.lbl-gen {
+    display: inline-block;
+    color: rgb(0, 42, 80);
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    margin: 10px 150px;
+}
+
+.lbl-gen.sc {
+    margin: 10px 270px;
+}
+
+.lbl-gen.info {
+    font-size: 30px;
+    margin: 10px 90px;
+}
+
+.img-gen {
+    width: 275px;
+    height: 275px;
+    margin: 0px 30px;
+}
+
+.tb-gen {
+    height: 60px;
+    width: 400px;
+    border: 2px solid rgb(37, 212, 137);
+    border-radius: 5px;
+    font-size: 25px;
+    margin: 0 30px;
+}
+
+.tb-gen.sc {
+    margin: 0px 150px 20px;
+}
+
+.tb-gen.info {
+    width: 100px;
+}
+
+.td-gen {
+    font-size: 25px;
+    color: rgb(0, 42, 80);
+}
+
+.rfv-gen {
+    color: rgb(255, 19, 19);
+    margin: 0 30px;
+}
+
+/*CSS Styles for multiple pages*/
+.gv {
+    border-radius: 10px;
+}
+
+.gv-label {
+    display: inline-block;
+    margin: 25px 225px 25px;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(0, 42, 80);
+    font-family: 'Oswald', sans-serif;
+}
+
+.gv-label.vg {
+    margin: 25px -125px;
+}
+
+.gv-label.info {
+    margin: 0 310px;
+    font-size: 15px;
+}
+
+.gv-label.info.sl {
+    margin: 0 230px;
+}
+
+.gv-label.vp {
+    margin: 25px 70px;
+    overflow-x: hidden;
+}
+
+.gv-label.sl {
+    margin: 25px 170px;
+}
+
+.gv-header {
+    background: linear-gradient(to right, rgb(15, 63, 196), rgb(37, 212, 137));
+    color: rgb(0, 42, 80);
+    font-size: 20px;
+}
+
+.gv-header a {
+    color: rgb(0, 42, 80);
+    text-decoration: none;
+}
+
+.gv-row {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 42, 80);
+    font-size: 15px;
+}
+
+.gv-row.vp {
+    font-size: 30px;
+}
+
+/*CSS styles for Index.aspx*/
+body.index {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 625px;
+    position: relative;
+}
+
+.left-main {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 63, 196);
+    /*background-color: rgb(37, 212, 137);*/
+}
+
+.left-main-upper {
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    top: 0;
+}
+
+.image-main {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.name-main {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    font-size: 63px;
+    color: white;
+}
+
+.left-main-lower {
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    bottom: 0;
+}
+
+.wel-text {
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-theme {
+    width: 400px;
+    height: 100px;
+    font-size: 40px;
+    box-shadow: 5px 5px rgb(0, 27, 69);
+    text-align: center;
+    background-color: white;
+    color: rgb(15, 63, 196);
+}
+
+.btn-theme:active {
+    box-shadow: 2px 2px rgb(0, 0, 0);
+    transform: translate(3px, 3px);
+}
+
+.right-main {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.right-main-box {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
 }
