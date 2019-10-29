@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[studentgroups]
+(
+	regno INT NOT NULL, 
+    [name] TEXT NOT NULL, 
+    [groupname] TEXT NOT NULL
+)
